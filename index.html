@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bux Login</title>
+    <link rel="icon" href="logo.ico.webp">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <div class="container">
+       <div class="form-box">
+          <div class="button-box">
+            <div id="elegir"></div>
+            <button type="button" class="toggle-btn" onclick="login()">Iniciar Sesión</button>
+            <button type="button" class="toggle-btn" onclick="registrar()">Registrar</button>
+            </div>
+            <form id="login" class="input-group">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text" class="input-field" placeholder="Correo Electronico" required>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password"class="input-field"placeholder="Contraseña"required>
+                <input type="checkbox"class="check-box"><span>Recordar Contraseña.</span>
+                <button type="submit"class="submit-btn">Acceder</button>
+            </form>
+            <form id="registrar" class="input-group">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" class="input-field" placeholder="Nombre de Usuario" required>
+                <i class="fa-solid fa-envelope"></i>
+                <input type="gmail" class="input-field" placeholder="Correo Electronico" required>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password"class="input-field"placeholder="Contraseña"required>
+                <input type="checkbox"class="check-box"><span>Acepto los terminos y condiciones.</span>
+                <button type="submit"class="submit-btn">Registrar</button>
+            </form>
+          </div>
+       </div> 
+       <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("registrar");
+        var z = document.getElementById("elegir");
+
+        function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+        }
+
+        function registrar(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="120px";  
+        } 
+
+       </script>
+</body>
+</html>
